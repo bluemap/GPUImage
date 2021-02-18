@@ -12,7 +12,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     filterNavigationController = [[UINavigationController alloc] init];
-    [self.window addSubview:filterNavigationController.view];
+    self.window.rootViewController = filterNavigationController;
+//    [self.window addSubview:filterNavigationController.view];
 
     filterListController = [[ShowcaseFilterListController alloc] initWithNibName:nil bundle:nil];
     
