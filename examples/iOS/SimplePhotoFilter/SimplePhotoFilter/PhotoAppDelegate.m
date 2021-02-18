@@ -13,7 +13,8 @@
     
     rootViewController = [[PhotoViewController alloc] initWithNibName:nil bundle:nil];
     rootViewController.view.frame = [[UIScreen mainScreen] bounds];
-    [self.window addSubview:rootViewController.view];
+    self.window.rootViewController = rootViewController;
+//    [self.window addSubview:rootViewController.view];
     
     [self.window makeKeyAndVisible];
     return YES;
