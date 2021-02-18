@@ -34,7 +34,10 @@
 {
     // Grab the back-facing camera
 	AVCaptureDevice *backFacingCamera = nil;
-	NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    AVCaptureDeviceDiscoverySession *captureDeviceDiscoverySession = [AVCaptureDeviceDiscoverySession discoverySessionWithDeviceTypes:@[AVCaptureDeviceTypeBuiltInWideAngleCamera]
+                                          mediaType:AVMediaTypeVideo
+                                           position:AVCaptureDevicePositionBack];
+    NSArray *devices = [captureDeviceDiscoverySession devices];
 	for (AVCaptureDevice *device in devices) 
 	{
 		if ([device position] == AVCaptureDevicePositionBack)
