@@ -26,7 +26,7 @@
 
 - (void)loadView
 {    
-    CGRect mainScreenFrame = [[UIScreen mainScreen] applicationFrame];	
+    CGRect mainScreenFrame = [[UIScreen mainScreen] bounds];
 	GPUImageView *primaryView = [[[GPUImageView alloc] initWithFrame:mainScreenFrame] autorelease];
 	self.view = primaryView;
 
