@@ -202,12 +202,18 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Cell Phone";
+				TargetAttributes = {
+					BCB5DDC914E86899000AF3C2 = {
+						DevelopmentTeam = X3X7VZZ2J6;
+					};
+				};
 			};
 			buildConfigurationList = BCB5DDC414E86899000AF3C2 /* Build configuration list for PBXProject "SimpleVideoFilter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = BCB5DDBF14E86899000AF3C2;
@@ -323,7 +329,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../../../framework/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -356,7 +362,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../../../framework/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -371,9 +377,11 @@
 		BCB5DDE314E86899000AF3C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = X3X7VZZ2J6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleVideoFilter/SimpleVideoFilter-Prefix.pch";
 				INFOPLIST_FILE = "SimpleVideoFilter/SimpleVideoFilter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucweb.iphone.lowversion.dev4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -382,9 +390,11 @@
 		BCB5DDE414E86899000AF3C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = X3X7VZZ2J6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleVideoFilter/SimpleVideoFilter-Prefix.pch";
 				INFOPLIST_FILE = "SimpleVideoFilter/SimpleVideoFilter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucweb.iphone.lowversion.dev4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

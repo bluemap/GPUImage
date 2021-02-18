@@ -30,7 +30,7 @@
     videoCamera.horizontallyMirrorFrontFacingCamera = NO;
     videoCamera.horizontallyMirrorRearFacingCamera = NO;
 
-//    filter = [[GPUImageSepiaFilter alloc] init];
+    filter = [[GPUImageSepiaFilter alloc] init];
     
 //    filter = [[GPUImageTiltShiftFilter alloc] init];
 //    [(GPUImageTiltShiftFilter *)filter setTopFocusLevel:0.65];
@@ -39,7 +39,7 @@
 //    [(GPUImageTiltShiftFilter *)filter setFocusFallOffRate:0.2];
     
 //    filter = [[GPUImageSketchFilter alloc] init];
-    filter = [[GPUImageColorInvertFilter alloc] init];
+//    filter = [[GPUImageColorInvertFilter alloc] init];
 //    filter = [[GPUImageSmoothToonFilter alloc] init];
 //    GPUImageRotationFilter *rotationFilter = [[GPUImageRotationFilter alloc] initWithRotation:kGPUImageRotateRightFlipVertical];
     
